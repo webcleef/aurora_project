@@ -101,7 +101,30 @@ body {
     width: 25px;
     height: 15px;
     background-position: 54px 136px; }
-  @media (min-width: 320px) {
+
+.legend-section {
+  background-image: linear-gradient(rgba(32, 29, 57, 0.6), rgba(32, 29, 57, 0.6)), url(../img/legend-section-visual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .legend-section__title {
+    font-family: 'Jura'; }
+  .legend-section .legend-slider__text {
+    font-family: 'Ubuntu'; }
+  .legend-section .pagination {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex; }
+    .legend-section .pagination__item {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 27px; }
+      .legend-section .pagination__item--green {
+        background-color: #8db1a6;
+        border: 1px solid #95bcb4; }
+        .legend-section .pagination__item--green-active {
+          background-color: #03eaa5; }
+        @media (min-width: 320px) {
 
   .header__inner {
     padding: 10px; }
@@ -135,8 +158,34 @@ body {
     font-size: 16px; }
 
   .header .side-bar__link {
-    font-size: 12px; } }
-  @media (min-width: 768px) {
+    font-size: 12px; }
+
+  .legend-section {
+    padding-top: 42px;
+    padding-bottom: 71px; }
+
+  .legend-section__inner {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .legend-section__title {
+    color: #fff; }
+
+  .legend-section .legend-slider {
+    margin-top: 59px; }
+
+  .legend-section .legend-slider__text {
+    color: #fff;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 12px; }
+
+  .legend-section .pagination {
+    margin-top: 71px; }
+
+  .legend-section__visual {
+    display: none; } }
+        @media (min-width: 768px) {
 
   .header__inner {
     padding-top: 36px; }
@@ -174,8 +223,30 @@ body {
     font-size: 20px; }
 
   .header .side-bar {
-    display: none; } }
-  @media (min-width: 1280px) {
+    display: none; }
+
+  .legend-section {
+    background: none;
+    padding: 0; }
+
+  .legend-section__inner {
+    display: -ms-flexbox;
+    display: flex; }
+
+  .legend-section__title {
+    color: #201c38; }
+
+  .legend-section .legend-slider__text {
+    color: #201c38;
+    padding-left: 64px;
+    padding-right: 27px; }
+
+  .legend-section .pagination {
+    padding-left: 64px; }
+
+  .legend-section__visual {
+    display: block; } }
+        @media (min-width: 1280px) {
 
   .header__inner {
     padding-top: 20px;
@@ -193,6 +264,10 @@ body {
     display: block; }
 
   .header .side-bar__link {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .legend-section__inner {
+    padding-left: 55px;
+    padding-right: 55px; } }
 
 /*# sourceMappingURL=style.css.map */
