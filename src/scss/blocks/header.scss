@@ -1,0 +1,200 @@
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+    &__inner {
+
+      @media (min-width: $screen-xs) {
+        padding: 10px;
+      }
+      @media (min-width: $screen-sm) {
+        padding-top: 36px;
+      }
+      @media (min-width: $screen-lg) {
+        padding-top: 20px;
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+
+    }
+
+  .nav-burger {
+    width: 37px;
+    height: 37px;
+    border: 2px solid $white-text;
+    border-radius: 50%;
+    position: relative;
+      @media (min-width: $screen-sm) {
+        display: none;
+      }
+      &__lines:after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background-color: $white-text;
+        left: 25%;
+        top: 25%;
+      }
+      &__lines:before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 2px;
+        background-color: $white-text;
+        left: 25%;
+        top: 50%;
+      }
+  }
+
+  .main-nav {
+    background-color: #1c1531;
+
+
+      @media (min-width: $screen-xs) {
+        position: absolute;
+        width: 137px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: none;
+      }
+
+      @media (min-width: $screen-sm) {
+        width: 100%;
+        height: auto;
+        position: relative;
+        opacity: 0.8;
+        display: block;
+
+      }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+        @media (min-width: $screen-xs) {
+          flex-direction: column;
+          align-content:center;
+          padding-left: 10px;
+
+        }
+        @media (min-width: $screen-sm) {
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: 0;
+        }
+        @media (min-width: $screen-lg) {
+          justify-content: space-around;
+        }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $white-text;
+      font-family: 'Jura';
+
+      @media (min-width: $screen-xs) {
+        line-height: 30px;
+      }
+      @media (min-width: $screen-sm) {
+       display: block;
+        padding: 27px 11px;
+      }
+    }
+  }
+
+  .main-title {
+    @media (min-width: $screen-xs) {
+      margin-top: 230px;
+      margin-bottom: 230px;
+    }
+    @media (min-width: $screen-sm) {
+      padding-left: 66px;
+      margin-top: 172px;
+      margin-bottom: 267px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-bottom: 330px;
+    }
+
+    &__head {
+      font-family: 'Nord';
+      color: $white-text;
+
+      @media (min-width: $screen-xs) {
+        font-size: 30px;
+      }
+      @media (min-width: $screen-sm) {
+        font-size: 50px;
+      }
+    }
+
+    &__description {
+      color: $white-text;
+      font-family: 'Jura';
+        @media (min-width: $screen-xs) {
+          font-size: 16px;
+        }
+        @media (min-width: $screen-sm) {
+          font-size: 20px;
+        }
+    }
+  }
+
+  .side-bar {
+    background-color: #2d2e44;
+    opacity: 0.8;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+
+
+
+    &__link {
+      color: $white-text;
+      text-decoration: none;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 400;
+      writing-mode: vertical-rl;
+
+      @media (min-width: $screen-xs) {
+        font-size: 12px;
+      }
+      @media (min-width: $screen-lg) {
+        font-size: 16px;
+      }
+
+    }
+
+  }
+
+  .social {
+
+      &--vk{
+        display: inline-block;
+        background-image: url(../img/reviews-foto.jpg);
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 15px;
+        background-position: 54px 136px;
+
+      }
+  }
+
+}
