@@ -156,6 +156,7 @@
     right: 0;
 
 
+
     @media (min-width: $screen-sm) {
       display: none;
     }
@@ -186,7 +187,7 @@
 
   .social {
 
-      &--vk{
+      &--vk {
         display: inline-block;
         background-image: url(../img/reviews-foto.jpg);
         background-repeat: no-repeat;
