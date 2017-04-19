@@ -84,7 +84,8 @@ body {
     width: 40px;
     height: 100%;
     top: 0;
-    right: 0; }
+    right: 0;
+    transform: rotate(180deg); }
     .header .side-bar__link {
       color: #e6fffd;
       text-decoration: none;
@@ -140,10 +141,11 @@ body {
     display: none; }
 
   .header .main-nav__list {
+    height: 100%;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-left: 10px; }
 
   .header .main-nav__link {
