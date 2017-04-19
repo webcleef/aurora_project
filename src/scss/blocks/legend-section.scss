@@ -24,6 +24,10 @@
     }
   }
 
+  &__info {
+      width: 50%;
+  }
+
   &__title {
     font-family: 'Jura';
     @media (min-width: $screen-xs) {
@@ -51,6 +55,8 @@
         color: $blue;
         padding-left: 64px;
         padding-right: 27px;
+        font-size: 16px;
+        line-height: 30px;
       }
     }
   }
@@ -85,6 +91,7 @@
   }
   @media (min-width: $screen-sm) {
     display: block;
+    width: 50%;
   }
  }
 
