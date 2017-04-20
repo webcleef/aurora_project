@@ -159,6 +159,7 @@
 
 
 
+
     @media (min-width: $screen-sm) {
       display: none;
     }
@@ -175,12 +176,17 @@
       font-style: normal;
       font-weight: 400;
       writing-mode: vertical-rl;
+      display: block;
+      margin: auto;
+
 
       @media (min-width: $screen-xs) {
         font-size: 12px;
+        margin-top: 193px;
       }
       @media (min-width: $screen-lg) {
         font-size: 16px;
+        margin-top: 217px;
       }
 
     }

@@ -17,15 +17,20 @@
     }
     @media (min-width: $screen-sm) {
       display: flex;
+      background-color: #eaeaec;
     }
     @media (min-width: $screen-lg) {
       padding-left: 55px;
       padding-right: 55px;
+      background-color: #fff;
     }
   }
 
   &__info {
-      width: 50%;
+
+      @media (min-width: $screen-sm) {
+
+      }
   }
 
   &__title {
@@ -68,6 +73,7 @@
       }
       @media (min-width: $screen-sm) {
         padding-left: 64px;
+        margin-top: 124px;
       }
 
       &__item {
