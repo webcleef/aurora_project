@@ -94,7 +94,9 @@ body {
       font-weight: 400;
       -webkit-writing-mode: vertical-rl;
           -ms-writing-mode: tb-rl;
-              writing-mode: vertical-rl; }
+              writing-mode: vertical-rl;
+      display: block;
+      margin: auto; }
   .header .social--vk {
     display: inline-block;
     background-image: url(../img/reviews-foto.jpg);
@@ -107,8 +109,6 @@ body {
   background-image: linear-gradient(rgba(32, 29, 57, 0.6), rgba(32, 29, 57, 0.6)), url(../img/legend-section-visual.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  .legend-section__info {
-    width: 50%; }
   .legend-section__title {
     font-family: 'Jura'; }
   .legend-section .legend-slider__text {
@@ -162,7 +162,8 @@ body {
     font-size: 16px; }
 
   .header .side-bar__link {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-top: 193px; }
 
   .legend-section {
     padding-top: 42px;
@@ -235,7 +236,8 @@ body {
 
   .legend-section__inner {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    background-color: #eaeaec; }
 
   .legend-section__title {
     color: #201c38; }
@@ -248,7 +250,8 @@ body {
     line-height: 30px; }
 
   .legend-section .pagination {
-    padding-left: 64px; }
+    padding-left: 64px;
+    margin-top: 124px; }
 
   .legend-section__visual {
     display: block;
@@ -271,10 +274,12 @@ body {
     display: block; }
 
   .header .side-bar__link {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-top: 217px; }
 
   .legend-section__inner {
     padding-left: 55px;
-    padding-right: 55px; } }
+    padding-right: 55px;
+    background-color: #fff; } }
 
 /*# sourceMappingURL=style.css.map */
