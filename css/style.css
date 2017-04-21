@@ -127,7 +127,39 @@ body {
         border: 1px solid #95bcb4; }
         .legend-section .pagination__item--green-active {
           background-color: #03eaa5; }
-        @media (min-width: 320px) {
+
+.fact-section {
+  background-color: #f7f7f7; }
+  .fact-section__title {
+    margin: 0;
+    font-family: 'Jura'; }
+  .fact-section .fact-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex; }
+    .fact-section .fact-list__item {
+      font-family: 'Ubuntu';
+      color: #201c38; }
+    .fact-section .fact-list__number {
+      position: relative;
+      font-weight: 500;
+      color: #e6e6e6;
+      display: block; }
+    .fact-section .fact-list__number:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #03eaa5; }
+    .fact-section .fact-list__number:after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      background-color: #03eaa5; }
+    @media (min-width: 320px) {
 
   .header__inner {
     padding: 10px; }
@@ -189,8 +221,41 @@ body {
     margin-top: 71px; }
 
   .legend-section__visual {
-    display: none; } }
-        @media (min-width: 768px) {
+    display: none; }
+
+  .fact-section__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 43px;
+    padding-bottom: 55px; }
+
+  .fact-section__title {
+    font-size: 20px; }
+
+  .fact-section .fact-list {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+  .fact-section .fact-list__item {
+    font-size: 12px;
+    margin-top: 38px;
+    padding-left: 17px; }
+
+  .fact-section .fact-list__number {
+    font-size: 27px;
+    margin-bottom: 12px; }
+
+  .fact-section .fact-list__number:before {
+    bottom: 0;
+    left: -16px; }
+
+  .fact-section .fact-list__number:after {
+    width: 1px;
+    height: 300%;
+    top: 100%;
+    left: -10px;
+    bottom: 0; } }
+    @media (min-width: 768px) {
 
   .header__inner {
     padding-top: 36px; }
@@ -255,8 +320,26 @@ body {
 
   .legend-section__visual {
     display: block;
-    width: 50%; } }
-        @media (min-width: 1280px) {
+    width: 50%; }
+
+  .fact-section .fact-list {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+
+  .fact-section .fact-list__item {
+    padding: 0;
+    width: 33.33%; }
+
+  .fact-section .fact-list__number:before {
+    bottom: -7px;
+    left: 0px; }
+
+  .fact-section .fact-list__number:after {
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0; } }
+    @media (min-width: 1280px) {
 
   .header__inner {
     padding-top: 20px;
@@ -280,6 +363,17 @@ body {
   .legend-section__inner {
     padding-left: 55px;
     padding-right: 55px;
-    background-color: #fff; } }
+    background-color: #fff; }
+
+  .fact-section__inner {
+    padding-top: 70px;
+    padding-left: 55px;
+    padding-right: 55px; }
+
+  .fact-section__title {
+    font-size: 30px; }
+
+  .fact-section .fact-list__item {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
