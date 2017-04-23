@@ -64,6 +64,9 @@
           font-size: 27px;
           margin-bottom: 12px;
         }
+        @media (min-width: $screen-lg) {
+          font-size: 45px;
+        }
     }
     &__number:before {
       position: absolute;
