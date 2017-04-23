@@ -21,6 +21,7 @@
   &__info {
     @media (min-width: $screen-sm) {
       padding-left: 20px;
+      width: 50%;
     }
   }
   &__content {
@@ -36,6 +37,10 @@
       @media (min-width: $screen-xs) {
         margin-top: 29px;
       }
+      @media (min-width: $screen-lg) {
+        font-size: 30px;
+        margin-top: 65px;
+      }
   }
   &__text {
     font-family: 'Ubuntu';
@@ -46,6 +51,10 @@
       }
       @media (min-width: $screen-sm) {
         margin-top: 10px;
+      }
+      @media (min-width: $screen-lg) {
+        font-size: 16px;
+        line-height: 30px;
       }
   }
   &__list {
@@ -66,6 +75,10 @@
         @media (min-width: $screen-xs) {
           padding-left: 20px;
           font-size: 10px;
+        }
+        @media (min-width: $screen-lg) {
+          font-size: 16px;
+          padding-left: 27px;
         }
     }
      &__item:before {

@@ -1,5 +1,8 @@
 .fact-section {
   background-color: #f7f7f7;
+    @media (min-width: $screen-lg) {
+      border-bottom: 1px solid #89c1a1;
+    }
 
   &__inner {
     @media (min-width: $screen-xs) {

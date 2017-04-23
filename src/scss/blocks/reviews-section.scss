@@ -1,0 +1,42 @@
+.reviews-section {
+  background-color: #b2dad0;
+
+
+  &__inner{
+    @media (min-width: $screen-xs) {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 37px;
+    }
+  }
+  &__title {
+    color: #212027;
+    margin: 0;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    @media (min-width: $screen-xs) {
+      flex: 20px;
+    }
+  }
+
+.reviews-slider {
+    display: flex;
+
+  &__item {
+    display: flex;
+    &--text {
+      background-color: #f7f7f7;
+      color: #4d4b5c;
+      font-family: 'Ubuntu';
+        @media (min-width: $screen-xs) {
+          padding: 25px 12px 33px 17px;
+          font-size: 10px;
+          line-height: 14px;
+        }
+    }
+
+  }
+}
+}
+
+
