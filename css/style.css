@@ -209,7 +209,24 @@ body {
 .places-season__item:last-child:before {
   background-color: #efb672; }
 
-@media (min-width: 320px) {
+.reviews-section {
+  background-color: #b2dad0; }
+  .reviews-section__title {
+    color: #212027;
+    margin: 0;
+    font-family: 'Ubuntu';
+    font-weight: 400; }
+  .reviews-section .reviews-slider {
+    display: -ms-flexbox;
+    display: flex; }
+    .reviews-section .reviews-slider__item {
+      display: -ms-flexbox;
+      display: flex; }
+      .reviews-section .reviews-slider__item--text {
+        background-color: #f7f7f7;
+        color: #4d4b5c;
+        font-family: 'Ubuntu'; }
+      @media (min-width: 320px) {
 
   .header__inner {
     padding: 10px; }
@@ -325,9 +342,22 @@ body {
 
   .places-season__item {
     padding-left: 20px;
-    font-size: 10px; } }
+    font-size: 10px; }
 
-@media (min-width: 768px) {
+  .reviews-section__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 37px; }
+
+  .reviews-section__title {
+    -ms-flex: 20px;
+    flex: 20px; }
+
+  .reviews-section .reviews-slider__item--text {
+    padding: 25px 12px 33px 17px;
+    font-size: 10px;
+    line-height: 14px; } }
+      @media (min-width: 768px) {
 
   .header__inner {
     padding-top: 36px; }
@@ -421,7 +451,8 @@ body {
     width: 50%; }
 
   .places-season__info {
-    padding-left: 20px; }
+    padding-left: 20px;
+    width: 50%; }
 
   .places-season__content {
     display: -ms-flexbox;
@@ -431,8 +462,7 @@ body {
 
   .places-season__text {
     margin-top: 10px; } }
-
-@media (min-width: 1280px) {
+      @media (min-width: 1280px) {
 
   .header__inner {
     padding-top: 20px;
@@ -458,6 +488,9 @@ body {
     padding-right: 55px;
     background-color: #fff; }
 
+  .fact-section {
+    border-bottom: 1px solid #89c1a1; }
+
   .fact-section__inner {
     padding-top: 70px;
     padding-left: 55px;
@@ -470,6 +503,18 @@ body {
     font-size: 16px; }
 
   .fact-section .fact-list__number {
-    font-size: 45px; } }
+    font-size: 45px; }
+
+  .places-season__title {
+    font-size: 30px;
+    margin-top: 65px; }
+
+  .places-season__text {
+    font-size: 16px;
+    line-height: 30px; }
+
+  .places-season__item {
+    font-size: 16px;
+    padding-left: 27px; } }
 
 /*# sourceMappingURL=style.css.map */
