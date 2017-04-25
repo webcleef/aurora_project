@@ -20,35 +20,59 @@
     }
 
   .nav-burger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     width: 37px;
     height: 37px;
-    border: 2px solid $white-text;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
     border-radius: 50%;
-    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: transparent;
+    border: 2px solid $white-text;
+      &__lines {
+         display: block;
+         position: absolute;
+         top: 14px;
+         left: 7px;
+
+         height: 2px;
+         width: 18px;
+         background: $white-text;
+          &:before,
+          &:after {
+            position: absolute;
+            display: block;
+            width: 18px;
+            height: 2px;
+            background: $white-text;
+            content: "";
+          }
+          &:before {
+
+          }
+          &:after {
+
+          }
+      }
       @media (min-width: $screen-sm) {
         display: none;
       }
-      &__lines:after {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        width: 18px;
-        height: 2px;
-        background-color: $white-text;
-        left: 25%;
-        top: 25%;
-      }
-      &__lines:before {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        width: 18px;
-        height: 2px;
-        background-color: $white-text;
-        left: 25%;
-        top: 50%;
-      }
+
   }
+
+
+
+.c-hamburger:focus {
+  outline: none;
+}
 
   .main-nav {
     background-color: #1c1531;
@@ -170,6 +194,7 @@
 
 
     &__link {
+      position: relative;
       color: $white-text;
       text-decoration: none;
       font-family: 'Ubuntu';
@@ -178,6 +203,19 @@
       writing-mode: vertical-rl;
       display: block;
       margin: auto;
+        &:after {
+          position: absolute;
+          content: '';
+          display: inline-block;
+          width: 25px;
+          height: 15px;
+          background-image: url(../img/sprite-0373247824377936.png);
+          background-repeat: no-repeat;
+          background-position: -54px -136px;
+          transform: rotate(90deg);
+
+
+        }
 
 
       @media (min-width: $screen-xs) {
