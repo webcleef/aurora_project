@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
 <head>
   @@include('_include/page-head.html')
-  <title>Document</title>
+  <title>Северное сияние</title>
 </head>
 <body>
   <!-- Это включение в разметку SVG-спрайта и пример его использования -->
@@ -24,12 +24,9 @@
 <!-- header begin -->
   <header class="header" style="background-image: url(img/header-bg.jpg)">
     <div class="header__inner">
-    <button class="nav-burger c-hamburger--rot">
-      <span class="nav-burger__lines">toggle menu</span>
+    <button class="nav-burger">
+      <span class="nav-burger__lines nav-burger__lines--close">toggle menu</span>
     </button>
-      <!-- <div class="nav-burger nav-burger--close">
-        <span class="nav-burger__lines nav-burger__lines--close"></span>
-      </div> -->
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#legends" class="main-nav__link main-nav__link--active">Легегды</a></li>
@@ -47,7 +44,7 @@
       </div>
       <div class="side-bar">
         <a href="#" class="side-bar__link">Больше фотографий</a>
-        <a href="#" class="social social--vk"></a>
+        <div class="social vk-ikon"></div>
       </div>
     </div>
   </header>
@@ -63,23 +60,23 @@
               <div class="legend-slider__item">
                 <p class="legend-slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
               </div>
-          <!--     <div class="legend-slider__item">
-                <p class="legend-slider__text">Libero reprehenderit aspernatur blanditiis, ad accusantium odio ullam non repudiandae debitis ab atque, provident repellat.</p>
+              <div class="legend-slider__item">
+                <p class="legend-slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
               </div>
               <div class="legend-slider__item">
-                <p class="legend-slider__text">Id magnam ipsum tenetur eveniet ipsam enim alias veritatis, laudantium quo explicabo, rem eligendi quod!</p>
+                <p class="legend-slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
               </div>
               <div class="legend-slider__item">
-                <p class="legend-slider__text">Vero consequatur nemo culpa eum, suscipit provident numquam sapiente. Rem ipsam natus, et tenetur autem?</p>
+                <p class="legend-slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
               </div>
               <div class="legend-slider__item">
-                <p class="legend-slider__text">Est laboriosam cumque, neque velit provident enim, saepe suscipit recusandae quod exercitationem deserunt pariatur vel.</p>
+                <p class="legend-slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
               </div>
             </div>
             <div class="legend-slider-nav">
               <span class="legend-slider-nav__link legend-slider-nav__link--prev"></span>
               <span class="legend-slider-nav__link legend-slider-nav__link--next"></span>
-            </div> -->
+            </div>
 
             <div class="pagination">
               <span class="pagination__item pagination__item--green pagination__item--green-active"></span>
@@ -251,12 +248,12 @@
       <h2 class="residence__title">Цены</h2>
         <div class="residence-tabs">
             <ul class="residence-tabs__list">
-              <li class="residence-tabs__regions residence-tabs__regions--active"><a href="#finland">Финляндия</a></li>
-              <li class="residence-tabs__regions"><a href="#nordway">Норвегия</a></li>
-              <li class="residence-tabs__regions"><a href="#yakutia">Якутия</a></li>
-              <li class="residence-tabs__regions"><a href="#alyaska">Аляска</a></li>
-              <li class="residence-tabs__regions"><a href="#island">Исландия</a></li>
-              <li class="residence-tabs__regions"><a href="#murmansk">Мурманск</a></li>
+              <li class="residence-tabs__regions residence-tabs__regions--active" rel="#finland">Финляндия</li>
+              <li class="residence-tabs__regions" rel="#nordway">Норвегия</li>
+              <li class="residence-tabs__regions" rel="#yakutia">Якутия</li>
+              <li class="residence-tabs__regions" rel="#alyaska">Аляска</li>
+              <li class="residence-tabs__regions" rel="#island">Исландия</li>
+              <li class="residence-tabs__regions" rel="#murmansk">Мурманск</li>
             </ul>
             <div class="residence-tabs__content" id="finland">
                 <table class="residence-tabs__item">
@@ -294,5 +291,6 @@
     <p class="footer__text" href="tel:+79211234567">+7 (921) 123-45-67</p>
 </div>
   </footer>
+  <script type="text/javascript" src="js/script.min.js"></script>
 </body>
 </html>
