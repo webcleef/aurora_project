@@ -7,25 +7,25 @@ body {
 
 @font-face {
   font-family: 'Jura';
-  src: url("fonts/jura-v7-cyrillic_latin-regular.woff2") format("woff2"), url("fonts/jura-v7-cyrillic_latin-regular.woff") format("woff");
+  src: url("../fonts/jura-v7-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/jura-v7-cyrillic_latin-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("fonts/ubuntu-v9-cyrillic-regular.woff2") format("woff2"), url("fonts/ubuntu-v9-cyrillic-regular.woff") format("woff");
+  src: url("../fonts/ubuntu-v9-cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v9-cyrillic-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("fonts/ubuntu-v9-cyrillic-500.woff2") format("woff2"), url("fonts/ubuntu-v9-cyrillic-500.woff") format("woff");
+  src: url("../fonts/ubuntu-v9-cyrillic-500.woff2") format("woff2"), url("../fonts/ubuntu-v9-cyrillic-500.woff") format("woff");
   font-style: normal;
   font-weight: 500; }
 
 @font-face {
   font-family: 'Nord';
-  src: url("fonts/nord_regular-webfont.woff2") format("woff2"), url("fonts/nord_regular-webfont.woff") format("woff");
+  src: url("../fonts/nord_regular-webfont.woff2") format("woff2"), url("../fonts/nord_regular-webfont.woff") format("woff");
   font-style: normal;
   font-weight: 500; }
 
@@ -316,8 +316,8 @@ body {
     .header .side-bar .vk-ikon:after {
       position: absolute;
       content: '';
-      background-image: url(../img/sprite-010381713507610035.png);
-      background-position: -54px -136px;
+      background-image: url(../img/sprite-0867088099765055.png);
+      background-position: 0px -136px;
       width: 25px;
       height: 15px;
       transform: rotate(90deg);
@@ -336,7 +336,7 @@ body {
       display: block;
       margin: auto; }
   .header .GGGGGGGGGGG {
-    background-image: url(../img/sprite-010381713507610035.png);
+    background-image: url(../img/sprite-0867088099765055.png);
     background-position: 0px -68px;
     width: 64px;
     height: 64px; }
