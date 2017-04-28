@@ -1,0 +1,14 @@
+.footer {
+  background-color: $blue;
+  color: #fff;
+    &__inner {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      font-family: 'Ubuntu';
+      font-size: 12px;
+    }
+      &__text:first-child {
+        margin-right: 35px;
+      }
+}

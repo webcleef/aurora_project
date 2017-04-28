@@ -37,6 +37,7 @@
     background-color: transparent;
     border: 2px solid $white-text;
     z-index: 100;
+
       &__lines {
          display: block;
          position: absolute;
@@ -46,6 +47,7 @@
          width: 18px;
          background: $white-text;
 
+
           &:before,
           &:after {
             position: absolute;
@@ -54,33 +56,56 @@
             height: 2px;
             background: $white-text;
             content: "";
-            transition-duration: 0.3s, 0.3s;
-            transition-delay: 0.3s, 0s;
+            transition: all ease-in-out 0.4s;
+
           }
           &:before {
             top: -7px;
           }
+
           &:after {
             top: 7px;
           }
+
       }
       @media (min-width: $screen-sm) {
         display: none;
       }
+  &--close {
+     > span {
+      transition: background .3s 0;
+      background: transparent;
+        &:before,
+        &:after {
+        transition: top .3s, transform .3s .5s;
+        top: 0;
+      }
+        &:before {
+           transform: rotate3d(0, 0, 1, 45deg);
+         }
 
+         &:after {
+            transform: rotate3d(0, 0, 1, -45deg);
+        }
+      }
   }
-
+}
   .main-nav {
     background-color: #1c1531;
+    display: none;
+    position: absolute;
+    width: 137px;
+    height: 100%;
+    top: 0;
+    left: -137px;
 
+    &--visible {
+    display: block;
+  }
 
       @media (min-width: $screen-xs) {
-        position: absolute;
-        width: 137px;
-        height: 100%;
-        left: -137px;
-        top: 0;
-        display: none;
+
+
       }
 
       @media (min-width: $screen-sm) {
@@ -89,7 +114,6 @@
         position: relative;
         opacity: 0.8;
         display: block;
-
       }
 
     &__list {
@@ -199,18 +223,6 @@
       writing-mode: vertical-rl;
       display: block;
       margin: auto;
-        &:after {
-          position: absolute;
-          content: '';
-          display: inline-block;
-          width: 25px;
-          height: 15px;
-          background-image: $spritesheet-image;
-          background-repeat: no-repeat;
-          background-position: -54px -136px;
-          transform: rotate(90deg);
-        }
-
 
       @media (min-width: $screen-xs) {
         font-size: 12px;
@@ -227,8 +239,85 @@
 
   .social {
     display: inline-block;
-  }
 
   }
 
 
+
+
+.GGGGGGGGGGG {
+  @include sprite($kraken);
+}
+
+
+.toggler {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $white-text;
+  border-radius: 50%;
+
+  @media (min-width:  $screen-sm) {
+    display: none;
+  }
+
+  > span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 18px;
+    height: 2px;
+    left: 9px;
+    background: #fff;
+    border-radius: .2rem;
+    position: relative;
+    transition: background .3s .5s;
+
+
+    &:before,
+    &:after {
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      border-radius: .2rem;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: 50% 50%;
+      transition: top .3s .6s, transform .3s;
+    }
+
+    &:before {
+      top: 7px;
+    }
+
+    &:after {
+      top: -7px;
+    }
+  }
+
+  &--close {
+    > span {
+      transition: background .3s 0;
+      background: transparent;
+
+      &:before,
+      &:after {
+        transition: top .3s, transform .3s .5s;
+        top: 0;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
+}
+
+}

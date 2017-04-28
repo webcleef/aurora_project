@@ -2,11 +2,10 @@ $(document).ready(function(){
   $('.legend-slider').slick();
   $('.reviews-slider').slick();
 
-$('.nav-burger').on('click', function(){
-  $('.main-nav').css('display', 'block').animate({left: '0'},'slow');
-  $('.nav-burger__lines').css('background', 'none');
-  $('.nav-burger__lines:before').animate({top:'0'},'slow');
-});
+
+
+
+
 
 $(".main-nav").on("click","a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
@@ -21,5 +20,17 @@ $(".main-nav").on("click","a", function (event) {
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1000);
   });
+
+
+
+$('.toggler').on('click', openCloseMenu);
+  function openCloseMenu(e) {
+    e.preventDefault();
+    $(this).toggleClass('toggler--close');
+    $('.main-nav').toggleClass('main-nav--visible');
+    $('.main-nav').animate({left:'0'}, 1500);
+  }
+
+
 
 });
