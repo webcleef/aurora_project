@@ -232,47 +232,62 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
-  .header .nav-burger {
-    display: block;
+  .header .toggler {
     position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
     width: 37px;
     height: 37px;
-    font-size: 0;
-    text-indent: -9999px;
-    box-shadow: none;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    background-color: transparent;
     border: 2px solid #e6fffd;
-    z-index: 100; }
-    .header .nav-burger__lines {
-      display: block;
-      position: absolute;
-      top: 14px;
-      left: 7px;
-      height: 2px;
+    border-radius: 50%; }
+    .header .toggler > span {
+      display: inline-block;
+      vertical-align: bottom;
       width: 18px;
-      background: #e6fffd; }
-      .header .nav-burger__lines:before, .header .nav-burger__lines:after {
-        position: absolute;
-        display: block;
+      height: 2px;
+      left: 9px;
+      background: #fff;
+      border-radius: .2rem;
+      position: relative;
+      transition: background .3s .5s; }
+      .header .toggler > span:before, .header .toggler > span:after {
         width: 100%;
         height: 2px;
-        background: #e6fffd;
-        content: "";
-        transition-duration: 0.3s, 0.3s;
-        transition-delay: 0.3s, 0s; }
-      .header .nav-burger__lines:before {
-        top: -7px; }
-      .header .nav-burger__lines:after {
+        background: #fff;
+        border-radius: .2rem;
+        position: absolute;
+        left: 0;
+        content: '';
+        transform-origin: 50% 50%;
+        transition: top .3s .6s, transform .3s; }
+      .header .toggler > span:before {
         top: 7px; }
+      .header .toggler > span:after {
+        top: -7px; }
+    .header .toggler--close > span {
+      transition: background .3s 0;
+      background: transparent; }
+      .header .toggler--close > span:before, .header .toggler--close > span:after {
+        transition: top .3s, transform .3s .5s;
+        top: 0; }
+      .header .toggler--close > span:before {
+        transform: rotate3d(0, 0, 1, 45deg); }
+      .header .toggler--close > span:after {
+        transform: rotate3d(0, 0, 1, -45deg); }
   .header .main-nav {
-    background-color: #1c1531; }
+    background-color: #1c1531;
+    display: none;
+    position: absolute;
+    width: 137px;
+    height: 100%;
+    top: 0;
+    left: 0; }
+    .header .main-nav--visible {
+      display: block;
+      transition: all .3s ease; }
     .header .main-nav__list {
       margin: 0;
       padding: 0;
@@ -298,6 +313,16 @@ body {
     top: 0;
     right: 0;
     transform: rotate(180deg); }
+    .header .side-bar .vk-ikon:after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/sprite-010381713507610035.png);
+      background-position: -54px -136px;
+      width: 25px;
+      height: 15px;
+      transform: rotate(90deg);
+      left: 8px;
+      margin-top: 240px; }
     .header .side-bar__link {
       position: relative;
       color: #e6fffd;
@@ -310,23 +335,19 @@ body {
               writing-mode: vertical-rl;
       display: block;
       margin: auto; }
-      .header .side-bar__link:after {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        width: 25px;
-        height: 15px;
-        background-image: "../img/sprite-045299345890768516.png";
-        background-repeat: no-repeat;
-        background-position: -54px -136px;
-        transform: rotate(90deg); }
-  .header .social {
-    display: inline-block; }
+  .header .GGGGGGGGGGG {
+    background-image: url(../img/sprite-010381713507610035.png);
+    background-position: 0px -68px;
+    width: 64px;
+    height: 64px; }
 
 .legend-section {
   background-image: linear-gradient(rgba(32, 29, 57, 0.6), rgba(32, 29, 57, 0.6)), url(../img/legend-section-visual.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
+  .legend-section__inner {
+    padding-left: 10px;
+    padding-right: 10px; }
   .legend-section__title {
     font-family: 'Jura'; }
   .legend-section .legend-slider__text {
@@ -345,6 +366,10 @@ body {
         border: 1px solid #95bcb4; }
         .legend-section .pagination__item--green-active {
           background-color: #03eaa5; }
+  .legend-section__visual {
+    display: none; }
+  .legend-section__photo {
+    width: 100%; }
 
 .fact-section {
   background-color: #f7f7f7; }
@@ -569,16 +594,21 @@ body {
   font-weight: 400;
   font-size: 10px; }
 
-@media (min-width: 320px){
+.footer {
+  background-color: #201c38;
+  color: #fff; }
+  .footer__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Ubuntu';
+    font-size: 12px; }
+  .footer__text:first-child {
+    margin-right: 35px; }
+  @media (min-width: 320px){
   .header__inner{
     padding: 10px; }
-  .header .main-nav{
-    position: absolute;
-    width: 137px;
-    height: 100%;
-    left: -137px;
-    top: 0;
-    display: none; }
   .header .main-nav__list{
     height: 100%;
     -ms-flex-direction: column;
@@ -601,9 +631,6 @@ body {
   .legend-section{
     padding-top: 42px;
     padding-bottom: 71px; }
-  .legend-section__inner{
-    padding-left: 10px;
-    padding-right: 10px; }
   .legend-section__title{
     color: #fff; }
   .legend-section .legend-slider{
@@ -615,8 +642,6 @@ body {
     font-size: 12px; }
   .legend-section .pagination{
     margin-top: 71px; }
-  .legend-section__visual{
-    display: none; }
   .fact-section__inner{
     padding-left: 10px;
     padding-right: 10px;
@@ -700,11 +725,10 @@ body {
     flex-direction: column; }
   .residence .residence-tabs__regions{
     margin-top: 33px; } }
-
-@media (min-width: 768px){
+  @media (min-width: 768px){
   .header__inner{
     padding-top: 36px; }
-  .header .nav-burger{
+  .header .toggler{
     display: none; }
   .header .main-nav{
     width: 100%;
@@ -738,6 +762,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     background-color: #eaeaec; }
+  .legend-section__info{
+    width: 50%; }
   .legend-section__title{
     color: #201c38; }
   .legend-section .legend-slider__text{
@@ -805,8 +831,7 @@ body {
     font-size: 12px;
     line-height: 20px;
     margin-bottom: 50px; } }
-
-@media (min-width: 1280px){
+  @media (min-width: 1280px){
   .header__inner{
     padding-top: 20px;
     padding-left: 55px;
