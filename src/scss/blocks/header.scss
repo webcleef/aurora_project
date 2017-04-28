@@ -19,77 +19,76 @@
 
     }
 
-  .nav-burger {
-    display: block;
+.toggler {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $white-text;
+  border-radius: 50%;
+
+  @media (min-width:  $screen-sm) {
+    display: none;
+  }
+
+  > span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 18px;
+    height: 2px;
+    left: 9px;
+    background: #fff;
+    border-radius: .2rem;
     position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 37px;
-    height: 37px;
-    font-size: 0;
-    text-indent: -9999px;
-    box-shadow: none;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    background-color: transparent;
-    border: 2px solid $white-text;
-    z-index: 100;
-
-      &__lines {
-         display: block;
-         position: absolute;
-         top: 14px;
-         left: 7px;
-         height: 2px;
-         width: 18px;
-         background: $white-text;
+    transition: background .3s .5s;
 
 
-          &:before,
-          &:after {
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: $white-text;
-            content: "";
-            transition: all ease-in-out 0.4s;
+    &:before,
+    &:after {
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      border-radius: .2rem;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: 50% 50%;
+      transition: top .3s .6s, transform .3s;
+    }
 
-          }
-          &:before {
-            top: -7px;
-          }
+    &:before {
+      top: 7px;
+    }
 
-          &:after {
-            top: 7px;
-          }
+    &:after {
+      top: -7px;
+    }
+  }
 
-      }
-      @media (min-width: $screen-sm) {
-        display: none;
-      }
   &--close {
-     > span {
+    > span {
       transition: background .3s 0;
       background: transparent;
-        &:before,
-        &:after {
+
+      &:before,
+      &:after {
         transition: top .3s, transform .3s .5s;
         top: 0;
       }
-        &:before {
-           transform: rotate3d(0, 0, 1, 45deg);
-         }
 
-         &:after {
-            transform: rotate3d(0, 0, 1, -45deg);
-        }
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
       }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
   }
 }
+
   .main-nav {
     background-color: #1c1531;
     display: none;
@@ -97,10 +96,10 @@
     width: 137px;
     height: 100%;
     top: 0;
-    left: -137px;
-
+    left: 0;
     &--visible {
     display: block;
+    transition: all .3s ease;
   }
 
       @media (min-width: $screen-xs) {
@@ -200,10 +199,18 @@
     top: 0;
     right: 0;
     transform: rotate(180deg);
+  .vk-ikon {
 
+    &:after {
+      position: absolute;
+      content: '';
+      @include sprite($vk-ikon);
+      transform: rotate(90deg);
+      left: 8px;
+      margin-top: 240px;
 
-
-
+    }
+ }
     @media (min-width: $screen-sm) {
       display: none;
     }
@@ -237,10 +244,8 @@
 
   }
 
-  .social {
-    display: inline-block;
 
-  }
+
 
 
 
@@ -249,75 +254,5 @@
   @include sprite($kraken);
 }
 
-
-.toggler {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  width: 37px;
-  height: 37px;
-  border: 2px solid $white-text;
-  border-radius: 50%;
-
-  @media (min-width:  $screen-sm) {
-    display: none;
-  }
-
-  > span {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 18px;
-    height: 2px;
-    left: 9px;
-    background: #fff;
-    border-radius: .2rem;
-    position: relative;
-    transition: background .3s .5s;
-
-
-    &:before,
-    &:after {
-      width: 100%;
-      height: 2px;
-      background: #fff;
-      border-radius: .2rem;
-      position: absolute;
-      left: 0;
-      content: '';
-      transform-origin: 50% 50%;
-      transition: top .3s .6s, transform .3s;
-    }
-
-    &:before {
-      top: 7px;
-    }
-
-    &:after {
-      top: -7px;
-    }
-  }
-
-  &--close {
-    > span {
-      transition: background .3s 0;
-      background: transparent;
-
-      &:before,
-      &:after {
-        transition: top .3s, transform .3s .5s;
-        top: 0;
-      }
-
-      &:before {
-        transform: rotate3d(0, 0, 1, 45deg);
-      }
-
-      &:after {
-        transform: rotate3d(0, 0, 1, -45deg);
-      }
-    }
-  }
-}
 
 }

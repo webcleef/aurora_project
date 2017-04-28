@@ -1,9 +1,26 @@
 $(document).ready(function(){
   $('.legend-slider').slick();
-  $('.reviews-slider').slick();
+  $('.reviews-slider').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
 
 
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
 
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 
 
@@ -28,9 +45,10 @@ $('.toggler').on('click', openCloseMenu);
     e.preventDefault();
     $(this).toggleClass('toggler--close');
     $('.main-nav').toggleClass('main-nav--visible');
-    $('.main-nav').animate({left:'0'}, 1500);
   }
 
 
 
 });
+
+

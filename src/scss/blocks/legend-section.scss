@@ -11,10 +11,8 @@
       padding: 0;
     }
   &__inner {
-    @media (min-width: $screen-xs) {
       padding-left: 10px;
       padding-right: 10px;
-    }
     @media (min-width: $screen-sm) {
       display: flex;
       background-color: #eaeaec;
@@ -29,7 +27,7 @@
   &__info {
 
       @media (min-width: $screen-sm) {
-
+        width: 50%;
       }
   }
 
@@ -92,13 +90,15 @@
   }
 
  &__visual {
-  @media (min-width: $screen-xs) {
     display: none;
-  }
+
   @media (min-width: $screen-sm) {
     display: block;
     width: 50%;
   }
+ }
+ &__photo {
+  width: 100%;
  }
 
 
