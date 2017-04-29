@@ -316,7 +316,7 @@ body {
     .header .side-bar .vk-ikon:after {
       position: absolute;
       content: '';
-      background-image: url(../img/sprite-06439124233960076.png);
+      background-image: url(../img/sprite-020220843963004276.png);
       background-position: 0px -136px;
       width: 25px;
       height: 15px;
@@ -336,7 +336,7 @@ body {
       display: block;
       margin: auto; }
   .header .GGGGGGGGGGG {
-    background-image: url(../img/sprite-06439124233960076.png);
+    background-image: url(../img/sprite-020220843963004276.png);
     background-position: 0px -68px;
     width: 64px;
     height: 64px; }
@@ -576,11 +576,15 @@ body {
   font-size: 12px;
   position: relative;
   cursor: pointer; }
+  .residence .residence-tabs__regions--active {
+    color: #89c1a1; }
+    .residence .residence-tabs__regions--active:after {
+      transform: rotate(90deg); }
   .residence .residence-tabs__regions:after {
     content: '';
     display: inline-block;
     position: absolute;
-    background-image: url(../img/sprite-06439124233960076.png);
+    background-image: url(../img/sprite-020220843963004276.png);
     background-position: -29px -136px;
     width: 6px;
     height: 9px;
