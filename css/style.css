@@ -316,7 +316,7 @@ body {
     .header .side-bar .vk-ikon:after {
       position: absolute;
       content: '';
-      background-image: url(../img/sprite-0565786265780976.png);
+      background-image: url(../img/sprite-06439124233960076.png);
       background-position: 0px -136px;
       width: 25px;
       height: 15px;
@@ -336,7 +336,7 @@ body {
       display: block;
       margin: auto; }
   .header .GGGGGGGGGGG {
-    background-image: url(../img/sprite-0565786265780976.png);
+    background-image: url(../img/sprite-06439124233960076.png);
     background-position: 0px -68px;
     width: 64px;
     height: 64px; }
@@ -580,7 +580,7 @@ body {
     content: '';
     display: inline-block;
     position: absolute;
-    background-image: url(../img/sprite-0565786265780976.png);
+    background-image: url(../img/sprite-06439124233960076.png);
     background-position: -29px -136px;
     width: 6px;
     height: 9px;
@@ -742,7 +742,8 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
   .residence .residence-tabs__regions{
-    margin-top: 33px; } }
+    margin-top: 33px;
+    font-size: 14px; } }
   @media (min-width: 768px){
   .header__inner{
     padding-top: 36px; }
@@ -855,7 +856,8 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .residence .residence-tabs__regions{
-    padding-right: 33px; }
+    padding-right: 33px;
+    font-size: 20px; }
   .residence .residence-tabs__content{
     width: 66%; }
   .footer__inner{
