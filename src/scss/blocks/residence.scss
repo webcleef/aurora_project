@@ -41,9 +41,11 @@
         }
         @media (min-width: $screen-xs) {
           margin-top: 33px;
+          font-size: 14px;
         }
         @media (min-width: $screen-sm) {
           padding-right: 33px;
+          font-size: 20px;
         }
       &-link {
         font-size: 12px;
