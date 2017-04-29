@@ -61,8 +61,24 @@ $('.residence-tabs__regions').on('click', function(){
     var activeTab = $('#' + selectTab);
     $(activeTab).fadeIn();
 
-
 });
+
+//Модальное окно
+ $('.contact-desc__region').on('click', function(){
+    $('.modal-form').fadeIn(400, function(){
+      $('.modal-content').css('display', 'block').animate({opacity: 1, top: '50%'}, 200);
+    });
+ });
+ //Закрываем модальное окно
+  $('modal-close, .modal-form').on('click', function(){
+    $('.modal-content').animate({opacity: 0, top: '20%'}, 200, function(){
+      $(this).css('display', 'none');
+      $('.modal-form').fadeOut(400);
+    });
+  });
+
+
+
 
 });
 
