@@ -39,7 +39,7 @@ $(".main-nav").on("click","a", function (event) {
   });
 
 
-
+//Бургер меню
 $('.toggler').on('click', openCloseMenu);
   function openCloseMenu(e) {
     e.preventDefault();
@@ -47,7 +47,22 @@ $('.toggler').on('click', openCloseMenu);
     $('.main-nav').toggleClass('main-nav--visible');
   }
 
+//Табы
+$('.residence-tabs__content').hide();
+$('.residence-tabs__content:first').show();
+$('.residence-tabs__regions:first').addClass('residence-tabs__regions--active');
 
+$('.residence-tabs__regions').on('click', function(){
+  $('.residence-tabs__regions').removeClass('residence-tabs__regions--active');
+  $(this).addClass('residence-tabs__regions--active');
+  $('.residence-tabs__content').hide();
+
+    var selectTab =$(this).attr('rel');
+    var activeTab = $('#' + selectTab);
+    $(activeTab).fadeIn();
+
+
+});
 
 });
 

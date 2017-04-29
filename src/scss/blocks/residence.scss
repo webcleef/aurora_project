@@ -31,6 +31,12 @@
       font-size: 12px;
       position: relative;
       cursor: pointer;
+        &--active {
+          color: #89c1a1;
+          &:after {
+            transform: rotate(90deg);
+          }
+        }
         &:after {
           content: '';
           display: inline-block;
@@ -38,6 +44,7 @@
           @include sprite($residence-marker);
           top: 25%;
           margin-left: 14px;
+
         }
         @media (min-width: $screen-xs) {
           margin-top: 33px;
