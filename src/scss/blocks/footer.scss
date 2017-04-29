@@ -7,8 +7,18 @@
       display: flex;
       font-family: 'Ubuntu';
       font-size: 12px;
+        @media (min-width: $screen-sm) {
+          justify-content: flex-end;
+        }
     }
-      &__text:first-child {
+      &__text {
         margin-right: 35px;
+        font-size: 12px;
+          @media (min-width: $screen-sm) {
+            font-size: 14px;
+          }
+          @media (min-width: $screen-lg) {
+            font-size: 16px;
+          }
       }
 }
