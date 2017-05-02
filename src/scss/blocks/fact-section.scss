@@ -5,12 +5,12 @@
     }
 
   &__inner {
-    @media (min-width: $screen-xs) {
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 43px;
       padding-bottom: 55px;
-    }
+      max-width: 1200px;
+      margin: 0 auto;
     @media (min-width: $screen-lg) {
       padding-top: 70px;
       padding-left: 55px;

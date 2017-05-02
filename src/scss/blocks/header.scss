@@ -4,10 +4,10 @@
   position: relative;
 
     &__inner {
-
-      @media (min-width: $screen-xs) {
         padding: 10px;
-      }
+        max-width: 1200px;
+        margin: 0 auto;
+
       @media (min-width: $screen-sm) {
         padding-top: 36px;
       }

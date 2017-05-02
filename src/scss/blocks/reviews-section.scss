@@ -1,14 +1,12 @@
 .reviews-section {
   background-color: #b2dad0;
-
-
   &__inner{
-    @media (min-width: $screen-xs) {
       padding-left: 10px;
       padding-right: 10px;
       padding-top: 37px;
       padding-bottom: 17px;
-    }
+      max-width: 1200px;
+      margin: 0 auto;
     @media (min-width: $screen-lg) {
       padding-left: 55px;
       padding-right: 55px;
