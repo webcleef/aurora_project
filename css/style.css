@@ -232,6 +232,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
+  .header__inner {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto; }
   .header .toggler {
     position: relative;
     z-index: 1;
@@ -316,7 +320,7 @@ body {
     .header .side-bar .vk-ikon:after {
       position: absolute;
       content: '';
-      background-image: url(../img/sprite-08859248536470223.png);
+      background-image: url(../img/sprite-009466884183809365.png);
       background-position: 0px -136px;
       width: 25px;
       height: 15px;
@@ -336,7 +340,7 @@ body {
       display: block;
       margin: auto; }
   .header .GGGGGGGGGGG {
-    background-image: url(../img/sprite-08859248536470223.png);
+    background-image: url(../img/sprite-009466884183809365.png);
     background-position: 0px -68px;
     width: 64px;
     height: 64px; }
@@ -347,7 +351,9 @@ body {
   background-size: cover; }
   .legend-section__inner {
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    max-width: 1200px;
+    margin: 0 auto; }
   .legend-section__title {
     font-family: 'Jura'; }
   .legend-section .legend-slider__text {
@@ -355,7 +361,8 @@ body {
   .legend-section .pagination {
     position: relative;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-top: 71px; }
     .legend-section .pagination__item {
       display: inline-block;
       width: 15px;
@@ -369,10 +376,18 @@ body {
   .legend-section__visual {
     display: none; }
   .legend-section__photo {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 .fact-section {
   background-color: #f7f7f7; }
+  .fact-section__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 43px;
+    padding-bottom: 55px;
+    max-width: 1200px;
+    margin: 0 auto; }
   .fact-section__title {
     margin: 0;
     font-family: 'Jura'; }
@@ -406,10 +421,17 @@ body {
 .places-season__inner {
   display: -ms-flexbox;
   display: flex;
-  color: #4d4b5c; }
+  color: #4d4b5c;
+  padding-left: 10px;
+  padding-right: 10px;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .places-season__img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .places-season__title {
   margin: 0;
@@ -457,6 +479,13 @@ body {
 
 .reviews-section {
   background-color: #b2dad0; }
+  .reviews-section__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 37px;
+    padding-bottom: 17px;
+    max-width: 1200px;
+    margin: 0 auto; }
   .reviews-section__title {
     color: #212027;
     margin: 0;
@@ -504,7 +533,9 @@ body {
   .contact-desc__inner {
     padding-left: 10px;
     padding-right: 10px;
-    color: #fff; }
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto; }
   .contact-desc__title {
     font-family: 'Jura';
     font-size: 20px;
@@ -534,7 +565,9 @@ body {
 .residence__inner {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 27px; }
+  padding-top: 27px;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .residence__title {
   margin: 0;
@@ -563,7 +596,7 @@ body {
     content: '';
     display: inline-block;
     position: absolute;
-    background-image: url(../img/sprite-08859248536470223.png);
+    background-image: url(../img/sprite-009466884183809365.png);
     background-position: -29px -136px;
     width: 6px;
     height: 9px;
@@ -574,7 +607,8 @@ body {
     color: #201c38;
     font-family: 'Ubuntu';
     display: inline-block;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 50px; }
 
 .residence .residence-tabs__content {
   margin-top: 20px; }
@@ -582,17 +616,21 @@ body {
 .residence .residence-tabs__item {
   width: 100%;
   text-align: center;
-  border: 1px solid #d0d0d0; }
+  border: 1px solid #d0d0d0;
+  border-collapse: collapse; }
 
 .residence .residence-tabs__item th {
   font-family: 'Ubuntu';
-  font-weight: 500; }
+  font-weight: 500;
+  padding: 25px 0;
+  border: 1px solid #d0d0d0; }
 
 .residence .residence-tabs__item td {
   font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 10px;
-  padding: 25px 0; }
+  padding: 25px 0;
+  border: 1px solid #d0d0d0; }
 
 .footer {
   background-color: #201c38;
@@ -603,7 +641,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-family: 'Ubuntu';
-    font-size: 12px; }
+    font-size: 12px;
+    max-width: 1200px;
+    margin: 0 auto; }
   .footer__text {
     margin-right: 35px;
     font-size: 12px; }
@@ -639,8 +679,6 @@ body {
     top: -10px;
     cursor: pointer; }
   @media (min-width: 320px){
-  .header__inner{
-    padding: 10px; }
   .header .main-nav__list{
     height: 100%;
     -ms-flex-direction: column;
@@ -672,13 +710,6 @@ body {
     line-height: 20px;
     font-weight: 400;
     font-size: 12px; }
-  .legend-section .pagination{
-    margin-top: 71px; }
-  .fact-section__inner{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 43px;
-    padding-bottom: 55px; }
   .fact-section__title{
     font-size: 20px; }
   .fact-section .fact-list{
@@ -700,11 +731,6 @@ body {
     top: 100%;
     left: -10px;
     bottom: 0; }
-  .places-season__inner{
-    padding-left: 10px;
-    padding-right: 10px;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
   .places-season__title{
     margin-top: 29px; }
   .places-season__text{
@@ -716,11 +742,6 @@ body {
   .places-season__item{
     padding-left: 20px;
     font-size: 10px; }
-  .reviews-section__inner{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 37px;
-    padding-bottom: 17px; }
   .reviews-section__title{
     font-size: 20px; }
   .reviews-section .reviews-slider{
@@ -808,7 +829,8 @@ body {
     line-height: 30px; }
   .legend-section .pagination{
     padding-left: 64px;
-    margin-top: 70px; }
+    margin-top: 70px;
+    margin-bottom: 15px; }
   .legend-section__visual{
     display: block;
     width: 50%; }
@@ -829,7 +851,8 @@ body {
   .places-season__inner{
     -ms-flex-direction: row;
     flex-direction: row;
-    background-color: #eaeaec; }
+    background-color: #eaeaec;
+    padding-left: 0; }
   .places-season__map{
     width: 50%; }
   .places-season__info{
@@ -880,7 +903,7 @@ body {
     justify-content: flex-end; }
   .footer__text{
     font-size: 14px; } }
-  @media (min-width: 1280px){
+  @media (min-width: 1200px){
   .header__inner{
     padding-top: 20px;
     padding-left: 55px;
@@ -899,6 +922,8 @@ body {
     padding-left: 55px;
     padding-right: 55px;
     background-color: #fff; }
+  .legend-section .pagination{
+    margin-top: 109px; }
   .fact-section{
     border-bottom: 1px solid #89c1a1; }
   .fact-section__inner{
@@ -947,6 +972,11 @@ body {
     font-size: 14px; }
   .contact-desc__link{
     font-size: 14px; }
+  .residence__inner{
+    padding-left: 55px;
+    padding-right: 55px; }
+  .residence__title{
+    font-size: 30px; }
   .residence .residence-tabs__regions-link{
     font-size: 16px; }
   .residence .residence-tabs__item td{
