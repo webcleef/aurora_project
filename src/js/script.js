@@ -1,5 +1,27 @@
 $(document).ready(function(){
-  $('.legend-slider').slick();
+  $('.legend-slider').slick({
+    infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  responsive: [
+
+    {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+      }
+    }
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
   $('.reviews-slider').slick({
   infinite: false,
   speed: 300,
@@ -12,7 +34,10 @@ $(document).ready(function(){
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true
+
       }
     }
 
@@ -44,7 +69,7 @@ $('.toggler').on('click', openCloseMenu);
   function openCloseMenu(e) {
     e.preventDefault();
     $(this).toggleClass('toggler--close');
-    $('.main-nav').toggleClass('main-nav--visible');
+    $('.main-nav').toggleClass('main-nav--visible').animate({left:'0px'}, 1000);
   }
 
 //Табы
@@ -70,7 +95,7 @@ $('.residence-tabs__regions').on('click', function(){
     });
  });
  //Закрываем модальное окно
-  $('modal-close, .modal-form').on('click', function(){
+  $('.modal-close, .modal-form').on('click', function(){
     $('.modal-content').animate({opacity: 0, top: '20%'}, 200, function(){
       $(this).css('display', 'none');
       $('.modal-form').fadeOut(400);
