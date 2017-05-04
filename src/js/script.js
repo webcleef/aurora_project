@@ -69,7 +69,7 @@ $('.toggler').on('click', openCloseMenu);
   function openCloseMenu(e) {
     e.preventDefault();
     $(this).toggleClass('toggler--close');
-    $('.main-nav').toggleClass('main-nav--visible').animate({left:'0px'}, 1000);
+    $('.main-nav').toggleClass('main-nav--visible');
   }
 
 //Табы

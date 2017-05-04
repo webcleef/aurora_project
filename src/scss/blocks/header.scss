@@ -96,16 +96,12 @@
     width: 137px;
     height: 100%;
     top: 0;
-
-    &--visible {
+    left: -137px;
+    transition: left .3s;
+ &--visible {
     display: block;
-
+    left: 0;
   }
-
-      @media (min-width: $screen-xs) {
-        left: -137px;
-
-      }
 
       @media (min-width: $screen-sm) {
         width: 100%;
@@ -115,6 +111,7 @@
         display: block;
         left: 0;
       }
+
 
     &__list {
       margin: 0;
