@@ -91,15 +91,13 @@
 
   .main-nav {
     background-color: #1c1531;
-    display: none;
     position: absolute;
     width: 137px;
     height: 100%;
     top: 0;
     left: -137px;
-    transition: left .3s;
+    transition: left .6s;
  &--visible {
-    display: block;
     left: 0;
   }
 
