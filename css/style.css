@@ -319,7 +319,7 @@ body {
     .header .side-bar .vk-ikon:after {
       position: absolute;
       content: '';
-      background-image: url(../img/sprite-084794367185881.png);
+      background-image: url(../img/sprite-003725384359540662.png);
       background-position: -76px -136px;
       width: 25px;
       height: 15px;
@@ -339,7 +339,7 @@ body {
       display: block;
       margin: auto; }
   .header .GGGGGGGGGGG {
-    background-image: url(../img/sprite-084794367185881.png);
+    background-image: url(../img/sprite-003725384359540662.png);
     background-position: 0px -68px;
     width: 64px;
     height: 64px; }
@@ -377,6 +377,15 @@ body {
   .legend-section__photo {
     width: 100%;
     height: 100%; }
+  .legend-section .slick-arrow {
+    position: absolute;
+    content: '';
+    background-image: url(../img/sprite-003725384359540662.png);
+    background-position: -38px -136px;
+    width: 34px;
+    height: 38px; }
+    .legend-section .slick-arrow:nth-of-type(2) {
+      transform: rotate(180deg); }
 
 .fact-section {
   background-color: #f7f7f7; }
@@ -595,7 +604,7 @@ body {
     content: '';
     display: inline-block;
     position: absolute;
-    background-image: url(../img/sprite-084794367185881.png);
+    background-image: url(../img/sprite-003725384359540662.png);
     background-position: -105px -136px;
     width: 6px;
     height: 9px;
