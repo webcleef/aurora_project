@@ -19,17 +19,25 @@
    font-style: normal;
    font-weight: 500;
 }
+// @font-face {
+//   font-family: 'Nord';
+//   src: url('../fonts/nord_regular-webfont.woff2') format('woff2'),
+//        url('../fonts/nord_regular-webfont.woff') format('woff');
+//    font-style: normal;
+//    font-weight: 500;
+// }
+// @font-face {
+//     font-family: 'nordmedium';
+//     src: url('../fonts/nordmedium-webfont.woff2') format('woff2'),
+//          url('../fonts/nordmedium-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
 @font-face {
-  font-family: 'Nord';
-  src: url('../fonts/nord_regular-webfont.woff2') format('woff2'),
-       url('../fonts/nord_regular-webfont.woff') format('woff');
-   font-style: normal;
-   font-weight: 500;
-}
-@font-face {
-    font-family: 'nordmedium';
-    src: url('../fonts/nordmedium-webfont.woff2') format('woff2'),
-         url('../fonts/nordmedium-webfont.woff') format('woff');
+    font-family: 'Nord-Medium';
+    src: url('../fonts/Nord-Medium.woff2') format('woff2'),
+         url('../fonts/Nord-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

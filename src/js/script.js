@@ -5,11 +5,13 @@ $(document).ready(function(){
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
+  arrows: true,
   responsive: [
 
     {
-      breakpoint: 320,
+      breakpoint: 768,
       settings: {
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
 
