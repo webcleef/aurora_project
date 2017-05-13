@@ -32,7 +32,7 @@
   @media (min-width:  $screen-sm) {
     display: none;
   }
-
+@media (min-width: $screen-md) {}
   > span {
     display: inline-block;
     vertical-align: bottom;
